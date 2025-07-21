@@ -1,7 +1,7 @@
 # Social Pulse
 
 ## Overview
-Social Pulse is an AI-powered web application designed to address the challenge faced by brand teams in tracking real-time content from influencers and competitors across multiple platforms. By monitoring a curated list of verified YouTube, Instagram, and LinkedIn accounts, Social Pulse summarizes recent content, identifies trends, and delivers actionable insights through a trend brief generated when the user clicks the "Summarize" button.
+Social Pulse is an AI-powered web application designed to address the challenge faced by brand teams in tracking real-time content from influencers and competitors across multiple platforms. By monitoring a curated list of verified YouTube, Instagram accounts, Social Pulse summarizes recent content, identifies trends, and delivers actionable insights through a trend brief generated when the user clicks the "Summarize" button.
 
 ## Features
 - **Account Verification**: Validates and curates a list of verified influencer and competitor accounts on YouTube, Instagram, and LinkedIn.
