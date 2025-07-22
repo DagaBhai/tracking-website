@@ -3,6 +3,7 @@ import os
 import json
 import smtplib
 import sqlite3
+import re
 from datetime import datetime
 from dateutil import tz
 from email.mime.text import MIMEText
@@ -88,15 +89,9 @@ def valid_user_insta(ig_username):
         return False
 
 def valid_email(email):
-    try:
-        s = smtplib.SMTP('smtp.gmail.com', 587)
-        s.starttls()
-        s.login(sender_email_id, sender_email_id_password)
-        s.sendmail(sender_email_id, email, "email verified")
-        s.quit()
-        return True
-    except:
-        return False
+    # Regular expression for basic email validation
+    pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+    return bool(re.match(pattern, email.strip()))
 
 # Load and save data functions
 def load_data(user_id):
